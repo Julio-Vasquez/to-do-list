@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 
 import { CheckboxProps, CheckboxPropTypes } from './type'
 
-export const Checkbox = ({ id, date, task }: CheckboxProps) => {
+export const Checkbox = ({ id, done, task, onChange }: CheckboxProps) => {
   return (
     <Fragment>
       <svg
@@ -24,10 +24,9 @@ export const Checkbox = ({ id, date, task }: CheckboxProps) => {
           className="todo__state"
           name={id}
           type="checkbox"
-          //defaultChecked={done}
-          //onChange={onChange}
+          defaultChecked={done}
+          onChange={onChange}
         />
-        {/* Just ADD !!!! */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"

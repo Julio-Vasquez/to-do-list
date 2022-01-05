@@ -1,9 +1,7 @@
 import { v4 } from 'uuid'
 
 import { useInput } from './../../hooks/useInput'
-
 import styles from './FormTask.module.scss'
-
 import { FormTaskPropTypes, FormTraskProps } from './types'
 
 export const FormTask = ({ handleAddTask }: FormTraskProps) => {
@@ -12,7 +10,7 @@ export const FormTask = ({ handleAddTask }: FormTraskProps) => {
   const handleAdd = () => {
     handleAddTask({
       id: v4(),
-      date: new Date().toLocaleDateString(),
+      done: false,
       task: value,
     })
   }

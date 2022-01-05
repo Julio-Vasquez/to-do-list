@@ -20,7 +20,7 @@ export const Container = () => {
   return (
     <>
       <FormTask handleAddTask={handleAddTask} />
-      <ListTask list={list} />
+      <ListTask list={list} setList={setList} />
       {!!error && error}
     </>
   )

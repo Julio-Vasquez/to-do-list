@@ -1,5 +1,5 @@
 export type Item = {
   id: string
-  date: string
+  done: boolean
   task: string
 }
