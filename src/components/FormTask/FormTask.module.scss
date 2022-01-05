@@ -1,0 +1,52 @@
+.form {
+  background: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin: auto;
+  max-width: 302px;
+  padding: 8px 16px;
+  .content {
+    padding-right: 4px;
+    background: #f8f8f8;
+    & > input {
+      background: transparent;
+      border: 0px solid;
+      font: {
+        family: 'Lucida Sans';
+        size: 20px;
+      }
+      height: 46px;
+      outline: none;
+      padding: 0px 10px;
+      width: 230px;
+    }
+    & > button {
+      cursor: pointer;
+      background-color: rgb(229, 151, 164);
+      outline: none;
+      padding: 8px;
+      font-size: 15px;
+      border: 0px solid;
+      border-radius: 5px;
+      color: white;
+      &[disabled] {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+      &:hover {
+        background-color: #e95678;
+      }
+      &:active {
+        background-color: #c23455;
+      }
+    }
+  }
+  .error {
+    padding-top: 10px;
+    color: red;
+  }
+  .success {
+    color: green;
+  }
+}
